@@ -15,11 +15,15 @@
     "@aws-amplify/react-native": "^1.2.0",
     "@react-native-async-storage/async-storage": "^2.2.0",
     "@react-native-community/netinfo": "^11.4.1",
+    "@expo-google-fonts/space-grotesk": "^0.2.4",
     "aws-amplify": "^6.15.7",
     "expo": "~54.0.12",
+    "expo-linear-gradient": "~13.0.2",
     "expo-status-bar": "~3.0.8",
+    "nativewind": "^4.0.36",
     "react": "19.1.0",
     "react-native": "0.81.4",
+    "react-native-svg": "^15.2.0",
     "react-native-get-random-values": "^1.11.0",
     "react-native-url-polyfill": "^3.0.0",
     "react-native-web": "^0.21.1"
@@ -28,6 +32,7 @@
   "devDependencies": {
     "@aws-amplify/backend": "^1.16.1",
     "@aws-amplify/backend-cli": "^1.8.0",
-    "@types/react": "~19.1.17"
+    "@types/react": "~19.1.17",
+    "tailwindcss": "^3.4.13"
   }
 }

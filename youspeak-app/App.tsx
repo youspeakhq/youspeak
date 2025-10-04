@@ -4,8 +4,7 @@ import 'react-native-url-polyfill/auto';
 
 import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
-import { styled } from 'nativewind';
-import { SafeAreaView, Text, TouchableOpacity, View } from 'react-native';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 import {
   useFonts,
   SpaceGrotesk_400Regular,
@@ -13,13 +12,14 @@ import {
   SpaceGrotesk_600SemiBold,
   SpaceGrotesk_700Bold,
 } from '@expo-google-fonts/space-grotesk';
-
+import "./global.css"
+ 
 import LightBulbIcon from './components/icons/LightBulbIcon';
 import StageRow, { type StageRowProps } from './components/StageRow';
+import { JSX } from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 type Stage = StageRowProps;
-
-const GradientBackground = styled(LinearGradient);
 
 const stages: Stage[] = [
   { label: 'Learn It.', icons: ['plus'] },
@@ -44,7 +44,7 @@ export default function App(): JSX.Element {
   }
 
   return (
-    <GradientBackground
+    <LinearGradient
       colors={['#4C1D95', '#1F9DF1']}
       start={{ x: 0, y: 0 }}
       end={{ x: 0.8, y: 1 }}
@@ -52,9 +52,9 @@ export default function App(): JSX.Element {
     >
       <SafeAreaView className="flex-1 px-8">
         <StatusBar style="light" />
-        <View className="flex-1 items-center justify-between py-12">
-          <View className="items-center gap-8">
-            <View className="items-center gap-2">
+        <View className="flex-1 items-center justify-center py-12">
+          <View className="items-center gap-8 ">
+            {/* <View className="items-center gap-2 ">
               <Text className="text-white text-6xl font-spaceGrotesk font-semibold tracking-[6px] uppercase">
                 YOU
               </Text>
@@ -62,10 +62,11 @@ export default function App(): JSX.Element {
             </View>
             <View className="h-28 w-28 items-center justify-center rounded-full border border-white/20 bg-white/10">
               <LightBulbIcon size={42} />
-            </View>
+            </View> */}
+            <Image source={require('./assets/splash-icon.png')}  />
           </View>
 
-          <View className="items-center gap-6">
+          {/* <View className="items-center gap-6">
             {stages.map((stage) => (
               <StageRow key={stage.label} label={stage.label} icons={stage.icons} />
             ))}
@@ -78,9 +79,9 @@ export default function App(): JSX.Element {
             <Text className="text-center text-lg font-spaceGrotesk font-semibold uppercase tracking-[4px] text-white">
               Learn It
             </Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </SafeAreaView>
-    </GradientBackground>
+    </LinearGradient>
   );
 }

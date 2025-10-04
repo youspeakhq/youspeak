@@ -5,7 +5,7 @@ import type { JSX } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-import SmileIcon from '../components/icons/SmileIcon';
+import SmileIcon from '../assets/icons/smile.svg';
 import type { RootStackParamList } from '../navigation/AppNavigator';
 
 type HomeScreenProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
@@ -28,7 +28,7 @@ const HomeScreen = ({ navigation }: HomeScreenProps): JSX.Element => {
                   key={index}
                   className="h-20 w-20 items-center justify-center rounded-full border-2 border-[#FACC15] bg-white/10"
                 >
-                  <SmileIcon size={52} color="#FACC15" />
+                  <SmileIcon width={52} height={52} />
                 </View>
               ))}
             </View>

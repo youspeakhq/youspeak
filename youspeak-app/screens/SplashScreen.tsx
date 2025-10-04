@@ -2,11 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { JSX } from 'react';
 import { useEffect } from 'react';
-import { Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-import SmileArcIcon from '../components/icons/SmileArcIcon';
+import splashIcon from '../assets/splash-icon.png';
 import type { RootStackParamList } from '../navigation/AppNavigator';
 
 const gradientColors = ['#2F0B65', '#0A5FCF'];
@@ -45,7 +45,7 @@ const SplashScreen = ({ navigation }: SplashScreenProps): JSX.Element => {
             <Text className="text-white text-6xl font-spaceGrotesk font-semibold tracking-[6px]">
               Speak
             </Text>
-            <SmileArcIcon width={180} color="#FFFFFF" />
+            <Image source={splashIcon} style={{ width: 180, height: 180 }} resizeMode="contain" />
           </View>
 
           <View className="items-center gap-3 px-12">

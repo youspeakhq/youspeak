@@ -34,27 +34,7 @@ const SplashScreen = ({ navigation }: SplashScreenProps): JSX.Element => {
         <StatusBar style="light" />
         <View className="flex-1 items-center justify-center gap-16">
           <View className="items-center gap-6">
-            <View className="flex-row items-center gap-4">
-              <Text className={wordmarkTextClassName}>Y</Text>
-              <View className={speechBubbleClassName}>
-                <View className="h-8 w-8 rounded-full border-2 border-white bg-white/85" />
-                <View className="mt-1 h-1.5 w-6 rounded-full bg-white/85" />
-              </View>
-              <Text className={wordmarkTextClassName}>U</Text>
-            </View>
-            <Text className="text-white text-6xl font-spaceGrotesk font-semibold tracking-[6px]">
-              Speak
-            </Text>
             <Image source={splashIcon} style={{ width: 180, height: 180 }} resizeMode="contain" />
-          </View>
-
-          <View className="items-center gap-3 px-12">
-            <Text className="text-center text-lg font-spaceGrotesk font-medium uppercase tracking-[4px] text-white/80">
-              Learn. Speak. Live.
-            </Text>
-            <Text className="text-center text-base font-spaceGrotesk text-white/70">
-              Your everyday speaking companion built to boost confidence and fluency.
-            </Text>
           </View>
         </View>
       </SafeAreaView>

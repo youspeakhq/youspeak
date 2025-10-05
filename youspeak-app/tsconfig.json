@@ -1,5 +1,10 @@
 {
   "compilerOptions": {},
   "extends": "expo/tsconfig.base",
-  "include": ["**/*.ts", "**/*.tsx", "declarations.d.ts"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "declarations.d.ts",
+    "nativewind-env.d.ts"
+  ]
 }

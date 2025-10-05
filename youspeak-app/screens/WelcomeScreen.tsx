@@ -51,14 +51,14 @@ const WelcomeScreen = ({ navigation }: WelcomeScreenProps): JSX.Element => {
             <TouchableOpacity
               activeOpacity={0.85}
               className="rounded-full bg-[#4C1D95] py-4"
-              onPress={() => navigation.replace('Home')}
+              onPress={() => navigation.navigate('SignUp')}
             >
               <Text className="text-center text-lg font-spaceGrotesk font-semibold text-white">Get Started</Text>
             </TouchableOpacity>
 
             <View className="flex-row justify-center gap-2">
               <Text className="text-base font-spaceGrotesk text-slate-500">Already have an account?</Text>
-              <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.replace('Home')}>
+              <TouchableOpacity activeOpacity={0.7} onPress={() => navigation.navigate('Login')}>
                 <Text className="text-base font-spaceGrotesk font-semibold" style={{ color: primaryColor }}>
                   Log in
                 </Text>

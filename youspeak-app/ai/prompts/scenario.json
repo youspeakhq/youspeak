@@ -1,6 +1,5 @@
 {
-  "beginner": "Write a short roleplay scenario where a teacher explains the concept of loops to a student.",
-  "intermediate": "Create a real-world scenario where a data engineer uses SQL joins to merge data from two tables.",
-  "advanced": "Write a case study where an AI researcher uses reinforcement learning to train a robot to navigate a maze."
+  "beginner": "Write a short roleplay scenario where two people meet for the first time at a coffee shop and introduce themselves in English. Include common phrases like 'Nice to meet you' and 'Where are you from?'",
+  "intermediate": "Create a real-world scenario where a tourist asks for directions to a museum in Italian, and a local resident helps them. Include specific vocabulary for navigation and landmarks.",
+  "advanced": "Write a case study where a business professional participates in a formal Japanese business meeting, including proper honorifics (keigo), business etiquette, and negotiation phrases."
 }
-

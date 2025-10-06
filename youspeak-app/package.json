@@ -1,0 +1,33 @@
+{
+  "name": "youspeak-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "amplify:sandbox": "ampx sandbox",
+    "amplify:deploy": "ampx deploy --branch main",
+    "amplify:generate": "ampx generate outputs --branch main"
+  },
+  "dependencies": {
+    "@aws-amplify/react-native": "^1.2.0",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-community/netinfo": "^11.4.1",
+    "aws-amplify": "^6.15.7",
+    "expo": "~54.0.12",
+    "expo-status-bar": "~3.0.8",
+    "react": "19.1.0",
+    "react-native": "0.81.4",
+    "react-native-get-random-values": "^1.11.0",
+    "react-native-url-polyfill": "^3.0.0",
+    "react-native-web": "^0.21.1"
+  },
+  "private": true,
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.16.1",
+    "@aws-amplify/backend-cli": "^1.8.0",
+    "@types/react": "~19.1.17"
+  }
+}

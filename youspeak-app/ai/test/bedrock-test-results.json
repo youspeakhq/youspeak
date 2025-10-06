@@ -1,0 +1,65 @@
+[
+  {
+    "file": "quiz.json",
+    "key": "beginner",
+    "success": true,
+    "duration": 12.2,
+    "responseLength": 1119
+  },
+  {
+    "file": "quiz.json",
+    "key": "intermediate",
+    "success": true,
+    "duration": 7.06,
+    "responseLength": 1278
+  },
+  {
+    "file": "quiz.json",
+    "key": "advanced",
+    "success": true,
+    "duration": 6.97,
+    "responseLength": 1266
+  },
+  {
+    "file": "scenario.json",
+    "key": "beginner",
+    "success": true,
+    "duration": 6.46,
+    "responseLength": 1189
+  },
+  {
+    "file": "scenario.json",
+    "key": "intermediate",
+    "success": true,
+    "duration": 7.08,
+    "responseLength": 1328
+  },
+  {
+    "file": "scenario.json",
+    "key": "advanced",
+    "success": true,
+    "duration": 6.27,
+    "responseLength": 1520
+  },
+  {
+    "file": "customization.json",
+    "key": "beginner",
+    "success": true,
+    "duration": 6.65,
+    "responseLength": 1258
+  },
+  {
+    "file": "customization.json",
+    "key": "intermediate",
+    "success": true,
+    "duration": 6.66,
+    "responseLength": 1415
+  },
+  {
+    "file": "customization.json",
+    "key": "advanced",
+    "success": true,
+    "duration": 10.46,
+    "responseLength": 1499
+  }
+]

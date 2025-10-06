@@ -1,36 +1,58 @@
-// amazonQ.ts
-import fetch from "node-fetch";
+import {
+  QBusinessClient,
+  ChatSyncCommand,
+} from "@aws-sdk/client-qbusiness";
 import * as dotenv from "dotenv";
 
 dotenv.config();
 
-const APPLICATION_ID = process.env.Q_APP_ID!;
-if (!APPLICATION_ID) throw new Error("Q_APP_ID not set in environment");
+const client = new QBusinessClient({
+  region: process.env.AWS_REGION_Q || "eu-west-1",
+  credentials: {
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
+  },
+});
 
-const Q_ENDPOINT = `https://qbusiness.amazonaws.com/applications/${APPLICATION_ID}/query`;
+let conversationId: string | undefined;
 
-export async function invokeAmazonQ(
-  prompt: string,
-  maxTokens = 300,
-  temperature = 0.7
-) {
-  const response = await fetch(Q_ENDPOINT, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      question: prompt,
-      max_tokens: maxTokens,
-      temperature,
-    }),
-  });
-
-  if (!response.ok) {
-    throw new Error(`Q Business request failed: ${response.status}`);
+export async function invokeAmazonQ(prompt: string, newConversation: boolean = false) {
+  const appId = process.env.QBUSINESS_APP_ID!;
+  
+  if (!appId) {
+    throw new Error("Missing QBUSINESS_APP_ID in .env");
   }
 
-  const data: any = await response.json();
+  if (newConversation) {
+    conversationId = undefined;
+  }
 
-  return data; // let test file decide how to extract
+  const commandInput: any = {
+    applicationId: appId,
+    userMessage: prompt,
+  };
+
+  if (conversationId) {
+    commandInput.conversationId = conversationId;
+  }
+
+  const command = new ChatSyncCommand(commandInput);
+
+  const response = await client.send(command);
+
+  if (response.conversationId) {
+    conversationId = response.conversationId;
+  }
+
+  const message = response.systemMessage || JSON.stringify(response, null, 2);
+
+  return {
+    message,
+    conversationId: response.conversationId,
+    response, 
+  };
+}
+
+export function resetConversation() {
+  conversationId = undefined;
 }

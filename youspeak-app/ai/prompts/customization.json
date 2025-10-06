@@ -1,5 +1,5 @@
 {
-  "beginner": "Customize this message for a new programming student: 'Keep practicing every day!'",
-  "intermediate": "Personalize this note for a developer learning TypeScript: 'Type safety will save you from bugs.'",
-  "advanced": "Rewrite this message for an experienced engineer: 'Stay curious and push the limits of what’s possible.'"
+  "beginner": "Customize this encouraging message for someone just starting to learn their first foreign language: 'Every word you learn brings you closer to fluency!'",
+  "intermediate": "Personalize this motivational note for a language learner struggling with pronunciation and accent: 'Your accent makes you unique—embrace it while you improve!'",
+  "advanced": "Rewrite this message for an advanced polyglot learning their fifth language: 'Each new language opens a door to a different way of thinking and experiencing the world.'"
 }

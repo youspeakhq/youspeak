@@ -1,0 +1,5 @@
+{
+  "beginner": "Customize this message for a new programming student: 'Keep practicing every day!'",
+  "intermediate": "Personalize this note for a developer learning TypeScript: 'Type safety will save you from bugs.'",
+  "advanced": "Rewrite this message for an experienced engineer: 'Stay curious and push the limits of what’s possible.'"
+}

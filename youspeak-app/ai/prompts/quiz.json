@@ -1,0 +1,5 @@
+{
+  "beginner": "Generate 3 multiple choice quiz questions about Python basics.",
+  "intermediate": "Create 3 quiz questions about JavaScript promises and async functions.",
+  "advanced": "Write 3 challenging quiz questions about machine learning model evaluation metrics."
+}

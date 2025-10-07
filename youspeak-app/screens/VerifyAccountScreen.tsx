@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useRef, useState } from 'react';
+import { useState, useRef } from 'react';
 import type { JSX } from 'react';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -107,4 +107,3 @@ const VerifyAccountScreen = ({ navigation, route }: VerifyAccountScreenProps): J
 };
 
 export default VerifyAccountScreen;
-

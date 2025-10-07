@@ -270,9 +270,9 @@ We welcome contributions! Please read our contributing guidelines and submit pul
 
 ## 📞 Contact
 
-- **Email**: [team-email@domain.com]
-- **GitHub**: [repository-url]
-- **LinkedIn**: [team-linkedin-profiles]
+- **Email**: [Youspeakhq@indiigoolabs.org]
+- **GitHub**: [https://github.com/youspeakhq/youspeak]
+- **LinkedIn**: [https://www.linkedin.com/company/you-speakhq]
 
 ---
 

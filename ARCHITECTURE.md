@@ -90,3 +90,5 @@
 - **Global Distribution**: CloudFront CDN for worldwide access
 - **Database Scaling**: DynamoDB auto-scaling capabilities
 - **Cost Optimization**: Pay-per-use model with AWS services
+
+

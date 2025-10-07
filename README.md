@@ -246,20 +246,6 @@ AMPLIFY_STORAGE_REGION=us-east-1
 - Secure file upload/download
 - CDN integration for performance
 
----
-
-## 🎥 Demo Video
-
-**YouTube Link**: [To be provided - 3-minute demonstration video]
-
-The demo video showcases:
-- User registration and onboarding flow
-- AI-powered lesson generation using Amazon Bedrock
-- Real-time assistance with Amazon Q
-- Interactive learning features and gamification
-- Performance analytics and progress tracking
-
----
 
 ## 📊 Key Metrics & Impact
 
@@ -269,44 +255,6 @@ The demo video showcases:
 - **User Engagement**: Gamified features increase completion rates by 40%
 - **Accessibility**: Offline-first design for low-connectivity areas
 
----
-
-## 🎤 Presentation
-
-**Event**: AWS Community Day West Africa 2025  
-**Date**: October 11th, 2025  
-**Location**: Zone Tech Park, Lagos  
-**Duration**: 10 minutes presentation + 5 minutes Q&A
-
-### Presentation Outline
-
-1. **Problem Statement** (2 minutes)
-   - Language learning challenges in West Africa
-   - Need for personalized, accessible solutions
-
-2. **Solution Overview** (3 minutes)
-   - YouSpeak platform demonstration
-   - AI-powered personalization
-
-3. **AWS Implementation** (3 minutes)
-   - Amazon Bedrock for content generation
-   - Amazon Q for intelligent assistance
-   - Amplify for scalable backend
-
-4. **Impact & Future** (2 minutes)
-   - Measurable outcomes
-   - Expansion plans and scalability
-
----
-
-## 👥 Team
-
-- **[Team Member 1]**: Lead Developer & AWS Architect
-- **[Team Member 2]**: AI/ML Engineer & Bedrock Specialist
-- **[Team Member 3]**: Frontend Developer & UX Designer
-- **[Team Member 4]**: Product Manager & Business Analyst
-
----
 
 ## 📄 License
 

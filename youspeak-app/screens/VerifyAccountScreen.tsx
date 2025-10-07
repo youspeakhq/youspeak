@@ -58,12 +58,12 @@ const VerifyAccountScreen = ({ navigation, route }: VerifyAccountScreenProps): J
               {code.map((digit, index) => (
                 <TextInput
                   key={index}
-                  ref={(ref) => {
+                  ref={(ref: TextInput | null) => {
                     inputRefs.current[index] = ref;
                   }}
                   value={digit}
-                  onChangeText={(text) => handleChangeText(text, index)}
-                  onKeyPress={(e) => handleKeyPress(e, index)}
+                  onChangeText={(text: string) => handleChangeText(text, index)}
+                  onKeyPress={(e: any) => handleKeyPress(e, index)}
                   keyboardType="number-pad"
                   maxLength={1}
                   className="h-16 flex-1 rounded-2xl border-2 border-slate-200 bg-slate-50 text-center text-2xl font-spaceGrotesk font-semibold text-slate-900"
